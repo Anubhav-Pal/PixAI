@@ -13,9 +13,11 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="sidebar-logo">
-          <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+      <section className="sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-banner bg-cover bg-no-repeat shadow-inner">
+        <Link href="/" className="home-heading">
+          PixAI
         </Link>
+      </section>
 
         <nav className="sidebar-nav">
           <SignedIn>
